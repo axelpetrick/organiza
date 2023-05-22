@@ -12,8 +12,8 @@ const Directory: React.FC = () => {
   const navigate = useNavigate();
 
   useDescriptionTitle(
-    `Tasks in "${params.dir}"`,
-    params.dir ? params.dir + " directory" : ""
+    `Tarefas em : "${params.dir}"`,
+    params.dir ? params.dir + " Diretório" : ""
   );
 
   const [tasksInCurrentDirectory, setTasksInCurrentDirectory] = useState<
@@ -31,7 +31,7 @@ const Directory: React.FC = () => {
 
   return (
     <LayoutRoutes
-      title={`${params.dir}'s tasks`}
+      title={`Tarefas: ${params.dir}`}
       tasks={tasksInCurrentDirectory}
     />
   );

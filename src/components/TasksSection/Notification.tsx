@@ -32,7 +32,7 @@ const Notification: React.FC = () => {
         ref={refBtnNotification}
         onClick={showNotifications}
         className={`relative ${tasksToShow.length ? classHasNotification : ""}`}
-        title="see notifications"
+        title="mostrar notificações"
       >
         <IconBell className="fill-violet-600 w-5 h-5 md:w-6 md:h-6 dark:fill-violet-800" />
       </button>
@@ -41,7 +41,7 @@ const Notification: React.FC = () => {
           {uncompletedTasks.length > 0 ? (
             <div>
               <span className="dark:text-slate-200 font-medium">
-                You have {uncompletedTasks.length} uncompleted tasks today:
+                Você tem: {uncompletedTasks.length} uncompleted tasks today:
               </span>
               <ul>
                 {tasksToShow.map((task) => (
@@ -60,12 +60,12 @@ const Notification: React.FC = () => {
                   href="/"
                   className="transition block w-full rounded-md p-1 bg-rose-100 text-rose-600 dark:text-slate-200 dark:bg-slate-700/[.3] text-center"
                 >
-                  See today's tasks
+                  Veja as tarefas de hoje
                 </a>
               )}
             </div>
           ) : (
-            <p>Nothing to show here.</p>
+            <p>Nada por aqui.</p>
           )}
         </div>
       )}

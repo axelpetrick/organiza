@@ -43,8 +43,8 @@ const ItemDirectory: React.FC<{ dir: string; classActive: string }> = ({
           onClose={closeModalDirectoryHandler}
           onConfirm={confirmEditDirNameHandler}
           dirName={dir}
-          title="Edit directory name"
-          btnText="Edit"
+          title="Editar nome do diretório"
+          btnText="Editar"
         />
       )}
       {modalIsShown && (

@@ -23,7 +23,7 @@ const LayoutRoutes: React.FC<Props> = ({ title, tasks }) => {
   };
 
   const tasksTitle = `${title} (${tasks.length} ${
-    tasks.length === 1 ? "task" : "tasks"
+    tasks.length === 1 ? "Tarefa" : "Tarefas"
   })`;
 
   return (
@@ -58,7 +58,7 @@ const LayoutRoutes: React.FC<Props> = ({ title, tasks }) => {
                  isListInView1 ? "h-20 sm:h-32" : "h-52 sm:h-64"
                }`}
           >
-            Add new task
+            Nova Tarefa
           </button>
         </li>
       </ul>

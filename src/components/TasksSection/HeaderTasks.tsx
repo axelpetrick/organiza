@@ -16,18 +16,18 @@ const HeaderTasks: React.FC = () => {
   const day: number = date.getDate();
 
   const monthName: string[] = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
   ];
 
   const todayDate = `${year}, ${monthName[month].slice(0, 3)} ${day
@@ -57,7 +57,7 @@ const HeaderTasks: React.FC = () => {
       <SearchField />
       <div className="text-center">
         <span className="text-slate-600 dark:text-slate-200 uppercase font-bold text-sm block xl:hidden">
-          To-do list
+          Organiza!
         </span>
         <time dateTime={dateTimeFormat}>{todayDate}</time>
       </div>
